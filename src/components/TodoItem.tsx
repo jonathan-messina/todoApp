@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TodoItem(props:string) {
+function TodoItem(props:any) {
     return (
         <li>
         <span>c</span>
