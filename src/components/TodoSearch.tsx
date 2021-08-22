@@ -1,8 +1,9 @@
 import React from 'react'
+import './styles/TodoSearch.css'
 
 function TodoSearch() {
     return (
-        <input type="text" placeholder='Nekoki' />
+        <input className="TodoSearch" type="text" placeholder='Buscar tareas.' />
     )
 }
 

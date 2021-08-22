@@ -6,7 +6,7 @@ import TodoSearch from './components/TodoSearch';
 import CreateTodoButton from './components/CreateTodoButton';
 
 const todos = [
-  {text:'Cortar cebolla', completed:false},
+  {text:'Cortar cebolla', completed:true},
   {text:'Tomar el curso de React', completed:false},
   {text:'Ir a la tienda', completed:false},
 ]
@@ -17,7 +17,7 @@ function App() {
 <TodoSearch/>
 <TodoList>
   {todos.map(todo=>
-  (<TodoItem  key={todo.text} text={todo.text}/>))
+  (<TodoItem  key={todo.text} text={todo.text} completed={todo.completed}/>))
   }
 </TodoList>
 <CreateTodoButton />
